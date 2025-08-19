@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ElevenLabs Web Voice Demo</title>
+	<style>
+		body {
+			font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial;
+			margin: 24px;
+		}
+
+		button {
+			padding: 10px 14px;
+			font-size: 16px;
+		}
+
+		#log {
+			white-space: pre-wrap;
+			font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+			border: 1px solid #ddd;
+			padding: 12px;
+			border-radius: 6px;
+			margin-top: 12px;
+			max-height: 240px;
+			overflow: auto;
+		}
+
+		.controls {
+			display: flex;
+			gap: 8px;
+			align-items: center;
+			margin-bottom: 12px;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>ElevenLabs Web Voice Demo</h2>
+	<p>Press Connect, then Hold to Talk while speaking. Release to listen to the AI response.</p>
+	<div class="controls">
+		<button id="connectBtn">Connect</button>
+		<button id="talkBtn" disabled>Hold to Talk</button>
+		<label><input type="checkbox" id="loopback" /> Local mic monitor</label>
+	</div>
+	<audio id="aiAudio" controls autoplay></audio>
+	<div id="log"></div>
+
+	<script src="/app.js"></script>
+</body>
+
+</html>

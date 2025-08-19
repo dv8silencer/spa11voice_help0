@@ -1,0 +1,26 @@
+{
+	"name": "elevenlabs-web-voice-demo",
+	"version": "1.0.0",
+	"description": "Single-page web app that streams mic audio to ElevenLabs Conversational AI and plays responses",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "node --watch server.js"
+	},
+	"keywords": [
+		"elevenlabs",
+		"voice",
+		"websocket",
+		"audio",
+		"ai",
+		"conversational"
+	],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.19.2"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}
